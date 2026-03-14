@@ -50,7 +50,7 @@ padding:10px 30px 20px 30px;
 
 .section h2{
 margin-top:30px;
-border-bottom:1px solid #444;
+border-bottom:1px solid #1f3061;
 padding-bottom:6px;
 }
 
@@ -90,7 +90,7 @@ font-size:14px;
 footer{
 text-align:center;
 padding:30px;
-color:#aab0c5;
+color:#8f9cc7;
 }
 .filters{
 text-align:center;
@@ -102,17 +102,17 @@ padding:8px 14px;
 margin:5px;
 border:none;
 border-radius:8px;
-background:#333;
+background:#373f54;
 color:white;
 cursor:pointer;
 }
 
 .filter:hover{
-background:#444;
+background:#4760b3;
 }
 
 .filter.active{
-background:#4c79ff;
+background:#1d3773;
 }
 
 </style>
@@ -131,7 +131,9 @@ background:#4c79ff;
 
 <div class="filters">
 <button class="filter active" data-category="all">All</button>
-<button class="filter" data-category="Google">Google</button>
+<button class="filter" data-category="Google">Google[All]</button>
+<button class="filter" data-category="Google_1">Google[Tools]</button>
+<button class="filter" data-category="Google_2">Google[Drive]</button>
 <button class="filter" data-category="Microsoft">Microsoft</button>
 <button class="filter" data-category="Social">Social</button>
 <button class="filter" data-category="AI">AI</button>
@@ -139,48 +141,95 @@ background:#4c79ff;
 
 
 
-<div class="section" data-category="Google">
-<h2>Google</h2>
-
+<div class="section" data-category="Google_1">
+<h2>Google[Tools]</h2>
 <div class="container">
 
-<a class="card"  data-category="Google" href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg?viewbox=auto" style="transform:scale(0.9)">
+<a class="card"  data-category="Google_1" href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg?viewbox=auto">
 <p>Google</p>
 </a>
 
-<a class="card"  data-category="Google" href="https://mail.google.com" target="_blank" rel="noopener noreferrer">
-<img src="https://edu.google.com/assets/icons/google-brands/gmail.svg?viewbox=auto">
+<a class="card"  data-category="Google_1" href="https://mail.google.com" target="_blank" rel="noopener noreferrer">
+<img src="https://edu.google.com/assets/icons/google-brands/gmail.svg?viewbox=auto" style="transform:scale(1.3)">
 <p>Gmail</p>
 </a>
 
-<a class="card"  data-category="Google" href="https://drive.google.com" target="_blank" rel="noopener noreferrer">
-<img src="https://edu.google.com/assets/icons/google-brands/drive.svg?viewbox=auto">
-<p>Drive</p>
+
+
+<a class="card"  data-category="Google_1" href="https://meet.google.com/" target="_blank" rel="noopener noreferrer">
+<img src="https://edu.google.com/assets/icons/google-brands/meet.svg?viewbox=auto" style="transform:scale(1.3)">
+<p>Meet</p>
 </a>
 
-<a class="card"  data-category="Google" href="https://slides.google.com" target="_blank" rel="noopener noreferrer">
-<img src="https://edu.google.com/assets/icons/google-brands/slides.svg?viewbox=auto">
+<a class="card"  data-category="Google_1" href="https://chat.google.com/app/home" target="_blank" rel="noopener noreferrer">
+<img src="https://edu.google.com/assets/icons/google-brands/google-chat-v2.svg?viewbox=auto" style="transform:scale(1.3)">
+<p>Chat</p>
+</a>
+
+<a class="card"  data-category="Google_1" href="https://calendar.google.com/" target="_blank" rel="noopener noreferrer">
+<img src="https://edu.google.com/assets/icons/google-brands/calendar.svg?viewbox=auto" style="transform:scale(1.3)">
+<p>Calendar</p>
+</a>
+<a class="card"  data-category="Google_1" href="https://classroom.google.com" target="_blank" rel="noopener noreferrer">
+<img src="https://edu.google.com/assets/icons/google-brands/classroom.svg?viewbox=auto" style="transform:scale(1.3)">
+<p>Classroom</p>
+</a>
+
+
+<a class="card"  data-category="Google_1" href="https://tasks.google.com/" target="_blank" rel="noopener noreferrer">
+<img src="https://www.gstatic.com/images/branding/productlogos/tasks/v10/192px.svg?viewbox=auto">
+<p>Tasks</p>
+</a>
+
+<a class="card"  data-category="Google_1" href="https://keep.google.com/" target="_blank" rel="noopener noreferrer">
+<img src="https://www.gstatic.com/images/branding/productlogos/keep_2020q4/v8/192px.svg?viewbox=auto">
+<p>Keeps</p>
+</a>
+
+<a class="card"  data-category="Google_1" href="https://about.google/intl/ja_ALL/products/" target="_blank" rel="noopener noreferrer">
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg?viewbox=auto">
+<p>All Products</p>
+</a>
+
+
+
+</div>
+</div>
+
+
+<div class="section" data-category="Google_2">
+<h2>Google[Drive]</h2>
+
+<div class="container">
+<a class="card"  data-category="Google_2" href="https://drive.google.com" target="_blank" rel="noopener noreferrer">
+<img src="https://edu.google.com/assets/icons/google-brands/drive.svg?viewbox=auto" style="transform:scale(1.3)">
+<p>Drive</p>
+</a>
+<a class="card"  data-category="Google_2" href="https://slides.google.com" target="_blank" rel="noopener noreferrer">
+<img src="https://edu.google.com/assets/icons/google-brands/slides.svg?viewbox=auto" style="transform:scale(1.3)">
 <p>Slides</p>
 </a>
 
-<a class="card"  data-category="Google" href="https://sheets.google.com" target="_blank" rel="noopener noreferrer">
-<img src="https://edu.google.com/assets/icons/google-brands/sheets.svg?viewbox=auto">
+<a class="card"  data-category="Google_2" href="https://sheets.google.com" target="_blank" rel="noopener noreferrer">
+<img src="https://edu.google.com/assets/icons/google-brands/sheets.svg?viewbox=auto" style="transform:scale(1.3)">
 <p>Spreadsheet</p>
 </a>
 
-<a class="card"  data-category="Google" href="https://docs.google.com" target="_blank" rel="noopener noreferrer">
-<img src="https://edu.google.com/assets/icons/google-brands/docs.svg?viewbox=auto">
+<a class="card"  data-category="Google_2" href="https://docs.google.com" target="_blank" rel="noopener noreferrer">
+<img src="https://edu.google.com/assets/icons/google-brands/docs.svg?viewbox=auto" style="transform:scale(1.3)">
 <p>Document</p>
 </a>
 
-<a class="card"  data-category="Google" href="https://classroom.google.com" target="_blank" rel="noopener noreferrer">
-<img src="https://edu.google.com/assets/icons/google-brands/classroom.svg?viewbox=auto">
-<p>Classroom</p>
+
+<a class="card"  data-category="Google_2" href="https://forms.google.com/" target="_blank" rel="noopener noreferrer">
+<img src="https://www.gstatic.com/images/branding/productlogos/forms_2020q4/v6/192px.svg?viewbox=auto">
+<p>Forms</p>
 </a>
-<a class="card"  data-category="Google" href="https://calendar.google.com/" target="_blank" rel="noopener noreferrer">
-<img src="https://edu.google.com/assets/icons/google-brands/calendar.svg?viewbox=auto">
-<p>Calendar</p>
+
+<a class="card"  data-category="Google_2" href="https://sites.google.com/" target="_blank" rel="noopener noreferrer">
+<img src="https://www.gstatic.com/images/branding/productlogos/sites_2020q4/v6/192px.svg?viewbox=auto">
+<p>Sites</p>
 </a>
 
 </div>
@@ -197,7 +246,7 @@ background:#4c79ff;
 <p>Bing</p>
 </a>
 
-<a class="card" data-category="Microsoft" href="https://outlook.live.com" target="_blank" rel="noopener noreferrer">
+<a class="card" data-category="Microsoft" href="https://outlook.cloud.microsoft/mail/" target="_blank" rel="noopener noreferrer">
 <img src="https://res-1.cdn.office.net/files/odsp-web-prod_2026-02-27.015/odbspartan/images/outlook_24x1_16f15926.svg?viewbox=auto">
 <p>Outlook</p>
 </a>
@@ -227,6 +276,11 @@ background:#4c79ff;
 <p>Teams</p>
 </a>
 
+<a class="card" data-category="Microsoft" href="https://onenote.cloud.microsoft/" target="_blank" rel="noopener noreferrer">
+<img src="https://res.cdn.office.net/files/fabric-cdn-prod_20251117.001/assets/brand-icons/product/svg/onenote_16x1.svg?viewbox=auto" style="transform:scale(0.8)">
+<p>OneNote</p>
+</a>
+
 </div>
 </div>
 
@@ -237,7 +291,7 @@ background:#4c79ff;
 
 <div class="container">
 
-<a class="card" data-category="Social" href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+<a class="card" data-category="Social Google_1" href="https://youtube.com" target="_blank" rel="noopener noreferrer">
 <img src="https://cdn.simpleicons.org/youtube?viewbox=auto">
 <p>YouTube</p>
 </a>
@@ -272,13 +326,13 @@ background:#4c79ff;
 <p>ChatGPT</p>
 </a>
 
-<a class="card" data-category="AI" href="https://copilot.microsoft.com" target="_blank" rel="noopener noreferrer">
+<a class="card" data-category="AI Microsoft" href="https://copilot.microsoft.com" target="_blank" rel="noopener noreferrer">
 <img src="https://res-1.cdn.office.net/files/odsp-web-prod_2026-02-27.015/odbspartan/images/M365_24x_da036bc4.svg?viewbox=auto">
 <p>Copilot</p>
 </a>
 
-<a class="card" data-category="AI" href="https://gemini.google.com/app" target="_blank" rel="noopener noreferrer">
-<img src="https://edu.google.com/assets/icons/google-brands/gemini.svg?viewbox=auto">
+<a class="card" data-category="AI Google_1" href="https://gemini.google.com/app" target="_blank" rel="noopener noreferrer">
+<img src="https://edu.google.com/assets/icons/google-brands/gemini.svg?viewbox=auto" style="transform:scale(1.3)">
 <p>Gemini</p>
 </a>
 
@@ -287,7 +341,7 @@ background:#4c79ff;
 
 
 <footer>
-©2026 Organic-Butsu
+©2026 user-name
 </footer>
 
 <script>
@@ -308,7 +362,7 @@ let text = card.innerText.toLowerCase();
 let category = card.dataset.category;
 
 let matchKeyword = text.includes(keyword);
-let matchCategory = (currentCategory === "all" || category === currentCategory);
+let matchCategory = (currentCategory === "all" || category.includes(currentCategory));
 
 if(matchKeyword && matchCategory){
 card.style.display="";
@@ -381,8 +435,6 @@ updateDisplay();
 
 </body>
 </html>
-
-
 
 
 
